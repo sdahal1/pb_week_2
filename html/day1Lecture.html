@@ -10,33 +10,75 @@
     <h1>Dojo Puppy Shelter</h1>
     <h2>View our puppies below</h2>
     <p>Note: all our puppies are registered and spayed.</p>
+    <div>
+        <h3>Puppy # 1: King Cav</h3>
+        <img src="./puppy1.jpeg" alt="cavalier puppy" height="200px">
+        <p>James the King Cav is ready for adoption. James likes blueberries.</p>
+        <h4>James eats the following snacks</h4>
+        <ul>
+            <li>Blueberries</li> 
+            <li>Peanut butter</li>
+            <li>Beef Jerkey</li>
+        </ul>
+        <h4>James top activities</h4>
+        <ol>
+            <li>Sleep</li> 
+            <li>Walk</li>
+            <li>Eat</li>
+            <li>Play with frizbee</li>
+        </ol>
+        <!-- here is an anchor tag  -->
+        <a href="https://twitter.com/bleacherreport/status/1534197366034685952">Click here to adopt James</a> <!--comment here -->
+    </div>
+    <div>
+        <h3>Puppy # 2: Jack Russell</h3>
+        <img src="./puppy1.jpeg" alt="cavalier puppy" height="200px">
+        <p>James the King Cav is ready for adoption. James likes blueberries.</p>
+        <h4>James eats the following snacks</h4>
+        <ul>
+            <li>Blueberries</li> 
+            <li>Peanut butter</li>
+            <li>Beef Jerkey</li>
+        </ul>
+        <h4>James top activities</h4>
+        <ol>
+            <li>Sleep</li> 
+            <li>Walk</li>
+            <li>Eat</li>
+            <li>Play with frizbee</li>
+        </ol>
+        <!-- here is an anchor tag  -->
+        <a href="https://twitter.com/bleacherreport/status/1534197366034685952">Click here to adopt James</a> <!--comment here -->
+    </div>
 
 
-    <h3>Puppy # 1: King Cav</h3>
-    <img src="./puppy1.jpeg" alt="cavalier puppy" height="200px">
-    <p>James the King Cav is ready for adoption. James likes blueberries.</p>
-    <h4>James eats the following snacks</h4>
-    <ul>
-       <li>Blueberries</li> 
-       <li>Peanut butter</li>
-       <li>Beef Jerkey</li>
-    </ul>
-    <h4>James top activities</h4>
-    <ol>
-       <li>Sleep</li> 
-       <li>Walk</li>
-       <li>Eat</li>
-       <li>Play with frizbee</li>
-    </ol>
-    <!-- here is an anchor tag  -->
-    <a href="https://twitter.com/bleacherreport/status/1534197366034685952">Click here to adopt James</a> <!--comment here -->
+    <div>
+        <h3>Puppy # 3: French Bulldog</h3>
+        <img src="./puppy1.jpeg" alt="cavalier puppy" height="200px">
+        <p>James the King Cav is ready for adoption. James likes blueberries.</p>
+        <h4>James eats the following snacks</h4>
+        <ul>
+            <li>Blueberries</li> 
+            <li>Peanut butter</li>
+            <li>Beef Jerkey</li>
+        </ul>
+        <h4>James top activities</h4>
+        <ol>
+            <li>Sleep</li> 
+            <li>Walk</li>
+            <li>Eat</li>
+            <li>Play with frizbee</li>
+        </ol>
+        <!-- here is an anchor tag  -->
+        <a href="https://twitter.com/bleacherreport/status/1534197366034685952">Click here to adopt James</a> <!--comment here -->  
+    </div>
 
     <h3>Other puppy information</h3>
     <table>
         <tr>
-           <th>Name</th>
-           <th>Age</th> 
-           <th>Registered?</th>
+            <th>Name</th>
+            <th>Age</th> 
+            <th>Registered?</th>
         </tr>
         <tr>
             <td>Charles</td>
@@ -55,8 +97,61 @@
         </tr>
     </table>
 
-    <h3>Have a puppy for adoption? Please fill out form below</h3>
-    
-
+    <h3>Have a puppy for adoption? Please fill out form below (* means required)</h3>
+    <form action="mailto:sdahal@codingdojo.com">
+        <div>
+            <label for="owner_name">Your name: *</label>
+            <input type="text" id="owner_name" placeholder="Your name here...">
+        </div>
+        <div>
+            <label for="age">Your Age:</label>
+            <input type="number" id="age" min="0" max="200">
+        </div>
+        <div>
+            <label for="reason">Why do you want a pet?</label>
+            <textarea id="reason" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="">Breed you are looking for:</label>
+            <select name="" id="">
+                <option selected disabled value="">Please Select a Breed</option>
+                <option value="">Cavalier</option>
+                <option value="">Terrier</option>
+                <option value="">Lab</option>
+                <option value="">Pomeranian</option>
+                <option value="">Husky</option>
+                <option value="">Dachshund</option>
+                <option value="">Doodles</option>
+                <option value="">CATS</option>
+            </select>
+        </div>
+        <div>
+            <p>Are you a Veteran looking for a service dog*</p>
+            <label for="yes">Yes</label>
+            <input type="radio" name="vet_status" id="yes">
+            <label for="no">No</label>
+            <input type="radio" name="vet_status" id="no">
+            <label for="x">Dont worry about it</label>
+            <input type="radio" name="vet_status" id="x">
+        </div>
+        <div>
+            <p>Please check all the sizes of pets you are willing to adopt</p>
+            <label for="small">Small</label>
+            <input type="checkbox" id="small">
+            <label for="medium">Medium</label>
+            <input type="checkbox" id="medium">
+            <label for="large">Large</label>
+            <input type="checkbox" id="large">
+        </div>
+        <div>
+            <label for="date">Select date you want to visit us:</label>
+            <input type="date" id="date">
+        </div>
+        <div>
+            <label for="">(Optional) Please select the tag color you want for the pet</label>
+            <input type="color" name="" id="">
+        </div>
+        <input type="submit" value="Schedule Appointment!">
+    </form>
 </body>
 </html>
