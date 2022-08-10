@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+
+#big-square{
+    background-color: rgb(139, 100, 52);
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /*horizontally position the children*/
+
+    align-items:center; /*vertically position the children*/
+
+}
+
+#small-square{
+    background-color: darkcyan;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}

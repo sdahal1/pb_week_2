@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+
+body{
+    background-color: aqua;
+}
+
+
+#nav-bar{
+    background-color: rgb(4,28,45);
+    /* height: 100px; */
+
+    display: flex;
+
+    align-items: center;
+    
+    justify-content:space-evenly;
+
+    padding: 8px 0px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    /* border: 1px solid red; */
+    width: 600px;
+
+    justify-content: space-evenly;
+}
+
+#logo{
+    height: 40px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    color: white;
+}
+
+#sign-in{
+    margin-left: 100px;
+}
+
+/*
+
+By default a div has no height if it has no content
+
+If a div has content, the divs height is the height of it tallest content
+
+The width of a div will by default be the width of its parent
+
+*/
